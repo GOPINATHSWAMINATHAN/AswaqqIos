@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Image Header View" customClass="ImageHeaderView" customModule="SlideMenuControllerSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KMNa0cJ.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="crj-Qs-Xeq">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    <color key="backgroundColor" red="0.99217778444290161" green="0.95715910196304321" blue="0.0064072608947753906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="KsU-S4-hhE">
+                    <rect key="frame" x="28" y="12" width="114" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="THq-40-VhC"/>
+                        <constraint firstAttribute="width" constant="114" id="Vdp-yI-A0R"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AswaqqNet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-sm-PAp">
+                    <rect key="frame" x="28" y="76" width="161" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.93832230699999997" green="0.94761262690000003" blue="0.94761262690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+966-565111116" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="om2-cf-7KB">
+                    <rect key="frame" x="28" y="105" width="261" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="crj-Qs-Xeq" secondAttribute="bottom" id="2GQ-0j-7zw"/>
+                <constraint firstItem="ngM-sm-PAp" firstAttribute="top" secondItem="KsU-S4-hhE" secondAttribute="bottom" constant="8" id="Aw6-L9-qlr"/>
+                <constraint firstAttribute="trailing" secondItem="crj-Qs-Xeq" secondAttribute="trailing" id="CEW-Ct-L8O"/>
+                <constraint firstAttribute="trailing" secondItem="ngM-sm-PAp" secondAttribute="trailing" constant="131" id="DV3-fo-1nM"/>
+                <constraint firstItem="crj-Qs-Xeq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Guc-J3-ibn"/>
+                <constraint firstAttribute="bottom" secondItem="KsU-S4-hhE" secondAttribute="bottom" constant="92" id="Kff-vI-5XQ"/>
+                <constraint firstItem="om2-cf-7KB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="Nkd-8U-ffa"/>
+                <constraint firstItem="crj-Qs-Xeq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S4z-uS-qaB"/>
+                <constraint firstAttribute="trailing" secondItem="om2-cf-7KB" secondAttribute="trailing" constant="31" id="XIw-MQ-5tH"/>
+                <constraint firstItem="om2-cf-7KB" firstAttribute="top" secondItem="ngM-sm-PAp" secondAttribute="bottom" constant="8" id="ce7-bS-oiv"/>
+                <constraint firstItem="KsU-S4-hhE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="cn0-Hd-iVZ"/>
+                <constraint firstItem="ngM-sm-PAp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="fYW-RE-mOM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backgroundImage" destination="crj-Qs-Xeq" id="s6z-e0-bbb"/>
+                <outlet property="profileImage" destination="KsU-S4-hhE" id="C8u-Fp-ZfO"/>
+            </connections>
+            <point key="canvasLocation" x="255" y="192"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="139" height="39"/>
+        <image name="KMNa0cJ.jpg" width="1280" height="1024"/>
+    </resources>
+</document>
